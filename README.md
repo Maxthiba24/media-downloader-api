@@ -63,6 +63,18 @@ Body JSON :
 - ✅ TikTok (vidéos sans watermark)
 - ✅ Pinterest (pins, vidéos)
 
+## 🌐 Mise en ligne (gratuit avec Render)
+
+1. Va sur **https://render.com** et connecte-toi (ou crée un compte gratuit).
+2. Clique sur **New +** → **Web Service**.
+3. Connecte ton **GitHub** si ce n’est pas fait, puis choisis le dépôt **media-downloader-api**.
+4. Render lit le fichier `render.yaml` : vérifie que **Build Command** = `pip install -r requirements.txt` et **Start Command** = `uvicorn app.main:app --host 0.0.0.0 --port $PORT`.
+5. Choisis le **plan Free**, puis **Create Web Service**.
+6. Attends la fin du déploiement. Ton API sera en ligne à une URL du type : **https://media-downloader-api.onrender.com**
+
+- Health : `https://ton-url.onrender.com/api/health`
+- Docs : `https://ton-url.onrender.com/docs`
+
 ## ⚙️ Configuration
 
 Modifiez `app/config.py` pour personnaliser :
