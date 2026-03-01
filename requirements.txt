@@ -1,8 +1,8 @@
 fastapi==0.103.2
 uvicorn[standard]==0.24.0
 yt-dlp==2024.12.23
-spotdl==4.3.0  # Version plus ancienne compatible avec pydantic 2.4.2
+spotdl==4.3.0
 python-multipart==0.0.6
 aiofiles==23.2.1
-pydantic==2.4.2
+pydantic>=2.9.2,<3.0.0  # ← Changement crucial : enlever la version fixe
 python-dotenv==1.0.0
