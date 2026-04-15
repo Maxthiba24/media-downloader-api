@@ -1,8 +1,8 @@
 fastapi==0.103.2
 uvicorn[standard]==0.23.2
-yt-dlp==2025.1.15  # ← Mise à jour vers la version minimale exigée par SpotDL
+yt-dlp==2026.2.21  # ← Mise à jour vers la version minimale exigée par SpotDL
 spotdl==4.3.0
-python-multipart==0.0.6
+python-multipart==0.0.26
 aiofiles==23.2.1
 pydantic>=2.9.2,<3.0.0
 python-dotenv==1.0.0
